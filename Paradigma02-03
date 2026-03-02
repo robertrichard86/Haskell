@@ -1,0 +1,22 @@
+{-data Arma = Arma String Float deriving Show
+
+getNome  :: Arma -> String
+getNome (Arma n p) = n
+
+getPreco :: Arma -> Float
+getPreco  (Arma n p) = p
+
+setNome  :: Arma -> String -> Arma
+setNome (Arma nome preco) novoNome = Arma novoNome preco
+
+-}
+
+-- data Arma = Arma {modelo :: String, preco :: Float} deriving Show
+
+--newtype Tambor = Tambor {qtd:: Int} deriving Show
+
+data Fabricante = Taurus | Glock | Imbel deriving Show
+
+data  Arma = Pistola {modelo :: String, preco :: Float}
+           | Revolver {modelo :: String, preco :: Float}
+            deriving  Show
