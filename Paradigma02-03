@@ -6,7 +6,7 @@ data Arma = Pistola  {num :: String, preco :: Float, fab :: Fabricante}
           | Revolver {num :: String, preco :: Float, fab :: Fabricante}
           deriving (Show)
 
--- 2. Lista de armas (Corrigida com o '=' que faltava na imagem)
+-- 2. Lista de armas
 armas :: [Arma]
 armas = [ Pistola "1111" 4000 Imbel
         , Pistola "222" 5555 Imbel
